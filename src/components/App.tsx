@@ -1,11 +1,14 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
+import GithubAutocomplete from "./GithubAutocomplete/GithubAutocomplete";
+
 
 const App = () => {
-    return (
-        <div className="App">
-            bruh
-        </div>
-    );
-}
+  return (
+    <div className="app">
+      <p className="app-title">Github autocomplete component</p>
+      <GithubAutocomplete />
+    </div>
+  );
+};
 export default App;

@@ -1,3 +1,13 @@
-.App {
-    background-color: red;
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &-title {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+  }
 }
