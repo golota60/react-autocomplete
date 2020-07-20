@@ -4,8 +4,6 @@ import ReactDOM from "react-dom";
 import React from "react";
 import RepoIcon from "../../common/RepoIcon/RepoIcon";
 import "@testing-library/jest-dom/extend-expect";
-import { create } from "react-test-renderer";
-import LoadingIcon from "../../common/LoadingIcon/LoadingIcon";
 
 const initialProps: AutocompleteProps = {
   value: "",

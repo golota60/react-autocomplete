@@ -24,7 +24,7 @@ const AutocompleteContent = ({
   isError,
   isDataValid,
   isEmpty,
-  items
+  items,
 }: AutocompleteContentProps) => {
   if (isDataValid) {
     return (
@@ -66,7 +66,10 @@ const AutocompleteContent = ({
     );
   } else {
     return (
-      <article className="autocomplete-items__info" data-testid="autocomplete-error">
+      <article
+        className="autocomplete-items__info"
+        data-testid="autocomplete-error"
+      >
         <h4 className="autocomplete-items__info-error">
           Oops, something went terribly wrong
         </h4>
@@ -96,9 +99,6 @@ const Autocomplete = ({
 }: AutocompleteProps) => {
   const [isShown, setShown] = useState(false);
 
-  useEffect(() => {
-  }, [])
-
   const handleInputChange = (inputText: string) => {
     onChange(inputText);
     inputText.length >= showThreshold ? setShown(true) : setShown(false);
@@ -107,7 +107,10 @@ const Autocomplete = ({
   const isDataValid = !isLoading && !isError && isShown && items.length >= 0;
 
   return (
-    <div className={`autocomplete-wrapper ${className}`} data-testid="autocomplete-component">
+    <div
+      className={`autocomplete-wrapper ${className}`}
+      data-testid="autocomplete-component"
+    >
       <TextInput
         className={`autocomplete-input`}
         onChange={handleInputChange}
