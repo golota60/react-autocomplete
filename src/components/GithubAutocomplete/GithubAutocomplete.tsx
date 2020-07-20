@@ -72,13 +72,13 @@ const GithubAutocomplete = () => {
 
   return (
     <div className="github-autocomplete">
-      <Autocomplete
-        value={inputValue}
-        onChange={handleInputChange}
-        items={valuesToDisplay}
-        isLoading={isLoading}
-        isError={isError}
-      />
+        <Autocomplete
+          value={inputValue}
+          onChange={handleInputChange}
+          items={valuesToDisplay}
+          isLoading={isLoading}
+          isError={isError}
+        />
     </div>
   );
 };

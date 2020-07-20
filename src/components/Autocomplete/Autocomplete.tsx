@@ -82,7 +82,7 @@ export interface AutocompleteProps {
   className?: string;
   onChange: (value: string) => void;
   value: string;
-  items: Array<AutocompleteItem>;
+  items: Array<AutocompleteItem> | undefined;
   isLoading?: boolean;
   showThreshold?: number;
   isError?: boolean;
